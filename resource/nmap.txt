@@ -1,0 +1,28 @@
+# Nmap 7.95 scan initiated Sat Dec  7 09:23:58 2024 as: nmap -A -v -oN nmap.txt 10.10.11.27
+Nmap scan report for itrc.ssg.htb (10.10.11.27)
+Host is up (0.079s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 9.2p1 Debian 2+deb12u3 (protocol 2.0)
+| ssh-hostkey: 
+|   256 78:1e:3b:85:12:64:a1:f6:df:52:41:ad:8f:52:97:c0 (ECDSA)
+|_  256 e1:1a:b5:0e:87:a4:a1:81:69:94:9d:d4:d4:a3:8a:f9 (ED25519)
+80/tcp   open     http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: IT Support Center
+2222/tcp open     ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 f2:a6:83:b9:90:6b:6c:54:32:22:ec:af:17:04:bd:16 (ECDSA)
+|_  256 0c:c3:9c:10:f5:7f:d3:e4:a8:28:6a:51:ad:1a:e1:bf (ED25519)
+8192/tcp filtered sophos
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/local/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec  7 09:24:30 2024 -- 1 IP address (1 host up) scanned in 32.84 seconds
